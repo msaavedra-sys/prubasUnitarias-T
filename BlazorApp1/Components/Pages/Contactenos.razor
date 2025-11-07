@@ -1,0 +1,18 @@
+@page "/contacto"
+@inject NavigationManager Navigation
+
+<PageTitle>Home</PageTitle>
+
+<h1>Pruebas unitarias</h1>
+
+
+<button class="btn btn-primary" @onclick="IrAOtraPagina">Ir a otra página</button>
+
+@code {
+    void IrAOtraPagina()
+    {
+        Navigation.NavigateTo(uri: "/www.google.com");
+    }
+}
+
+
